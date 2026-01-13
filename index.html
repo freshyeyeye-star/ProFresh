@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRO FRESH - Link in Bio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse-glow {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
+        }
+        .free-badge {
+            animation: pulse-glow 1.5s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body class="bg-gradient-to-br from-black via-gray-900 to-red-950 min-h-screen">
     
@@ -50,7 +65,36 @@
         <!-- ส่วนสินค้า -->
         <div class="space-y-6">
             
-            <!-- การ์ดสินค้าที่ 1: คอร์ส MULTIVERSE -->
+            <!-- การ์ดสินค้าที่ 1: E-Book FREE -->
+            <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-xl shadow-purple-900/30 overflow-hidden hover:shadow-2xl hover:shadow-purple-800/40 transition-all duration-200 border border-purple-700">
+                <img 
+                    src="https://i.postimg.cc/ydrdq66h/d-sin-th-y-ngmi-di-t-ngch-x.png" 
+                    alt="E-Book MULTIVERSE" 
+                    class="w-full h-auto object-cover rounded-t-2xl"
+                >
+                
+                <div class="p-5">
+                    <div class="inline-block bg-gradient-to-r from-green-600 to-green-500 text-white text-sm font-bold px-4 py-2 rounded-full mb-2 free-badge shadow-lg shadow-green-500/50">
+                        FREE
+                    </div>
+                    
+                    <h3 class="text-lg font-bold text-white mb-2">แจกตัวอย่าง E-Book FREE : MULTIVERSE</h3>
+                    
+                    <p class="text-gray-300 text-sm mb-4 leading-relaxed">
+                        ปูพื้นฐาน MULTIVERSE สู่กำไรอย่างยั่งยืน
+                    </p>
+                    
+                    <a 
+                        href="https://drive.google.com/file/d/1SxqxLmOHnGFPCASYLeYjeJxQdLKX1h36/view?usp=drive_link" 
+                        target="_blank"
+                        class="block w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-semibold py-3 px-6 rounded-full text-center transition-all duration-200 shadow-lg shadow-red-600/50"
+                    >
+                        รับ E-Book ฟรี
+                    </a>
+                </div>
+            </div>
+
+            <!-- การ์ดสินค้าที่ 2: คอร์ส MULTIVERSE -->
             <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-xl shadow-purple-900/30 overflow-hidden hover:shadow-2xl hover:shadow-purple-800/40 transition-all duration-200 border border-purple-700">
                <img
     src="https://i.postimg.cc/6pZ2yrS4/sanea-khxng-sanea-khxng-d-sin-th-mi-m-ch-x.png"
@@ -75,37 +119,6 @@
                 </div>
             </div>
 
-            <!-- การ์ดสินค้าที่ 2: E-Book FREE -->
-            <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-xl shadow-purple-900/30 overflow-hidden hover:shadow-2xl hover:shadow-purple-800/40 transition-all duration-200 border border-purple-700">
-                <div class="flex justify-center bg-gradient-to-b from-gray-900 to-gray-800 p-6">
-                    <img 
-                        src="https://i.postimg.cc/nzKk4C2Z/h-wre-xngy-xy.png" 
-                        alt="E-Book MULTIVERSE" 
-                        class="h-64 object-contain shadow-lg shadow-purple-900/50 rounded border border-purple-800"
-                    >
-                </div>
-                
-                <div class="p-5">
-                    <div class="inline-block bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">
-                        FREE
-                    </div>
-                    
-                    <h3 class="text-lg font-bold text-white mb-2">แจกตัวอย่าง E-Book FREE : MULTIVERSE</h3>
-                    
-                    <p class="text-gray-300 text-sm mb-4 leading-relaxed">
-                        ปูพื้นฐาน MULTIVERSE สู่กำไรอย่างยั่งยืน
-                    </p>
-                    
-                    <a 
-                        href="https://drive.google.com/file/d/1SxqxLmOHnGFPCASYLeYjeJxQdLKX1h36/view?usp=drive_link" 
-                        target="_blank"
-                        class="block w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-semibold py-3 px-6 rounded-full text-center transition-all duration-200 shadow-lg shadow-red-600/50"
-                    >
-                        รับ E-Book ฟรี
-                    </a>
-                </div>
-            </div>
-
         </div>
 
         <!-- Footer -->
@@ -117,4 +130,3 @@
 </body>
 
 </html>
-
